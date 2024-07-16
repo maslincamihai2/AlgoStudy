@@ -1,0 +1,11 @@
+<h2>Clase din care faci parte</h2>
+<ol>
+  <li *ngFor="let clasa of clase" (click)="navigateToProblem(clasa.id)">
+    <h3>{{ clasa.nume}}</h3>
+    <div>Nivel: {{ clasa.nivel }}</div>
+    <div>Localitate: {{ clasa.localitate }}</div>
+    <div>Unitate Scolara: {{ clasa.unitateScolara }}</div>
+  </li>
+</ol>
+
+<button routerLink="/clase-new">Creeaza clasa</button>

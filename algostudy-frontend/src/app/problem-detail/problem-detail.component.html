@@ -1,0 +1,18 @@
+<div class="problem-detail">
+    <h2>{{ problem?.title }}</h2>
+    <p>{{ problem?.description }}</p>
+    <p><strong>Input Example:</strong> {{ problem?.inputExample }}</p>
+    <p><strong>Output Example:</strong> {{ problem?.outputExample }}</p>
+    
+    <h3>Submit Your Solution</h3>
+    <textarea [(ngModel)]="solutionCode" rows="10" cols="80" placeholder="Enter your C++ code here..." class="code-input"></textarea>
+    <button (click)="submitSolution()" class="submit-button">Submit Solution</button>
+    <p class="cpp-note">Only solutions in C++ are expected.</p>
+  
+    <h3>My Solutions</h3>
+    <div *ngFor="let solution of solutions" class="solution-card">
+      <pre class="solution-code">{{ solution.code }}</pre>
+      <p>Score: {{ solution.score }}</p>
+    </div>
+  </div>
+  

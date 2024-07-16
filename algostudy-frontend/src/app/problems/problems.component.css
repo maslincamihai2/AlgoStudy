@@ -1,0 +1,81 @@
+.problems-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .problem-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .problem-card.solved {
+    background-color: #d4edda;
+    border-color: #28a745;
+  }
+  
+  .problem-card.solved .solved-text {
+    color: #28a745;
+  }
+  
+  .problem-card.solved .solved-icon {
+    color: #28a745;
+  }
+  
+  .problem-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .problem-card h2 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .solved-indicator,
+  .unsolved-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .solved-text,
+  .unsolved-text {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .solved-icon,
+  .unsolved-icon {
+    font-size: 1.2em;
+  }
+  
+  .unsolved-text {
+    color: #dc3545;
+  }
+  
+  .unsolved-icon {
+    color: #dc3545;
+  }
+  
+  .view-problem {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-problem:hover {
+    background-color: #0056b3;
+  }
+  

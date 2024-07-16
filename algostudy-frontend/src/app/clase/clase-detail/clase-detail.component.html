@@ -1,0 +1,25 @@
+<h2>{{clasa.nume}}</h2>
+<div>Nivel: {{ clasa.nivel }}</div>
+<div>Localitate: {{ clasa.localitate }}</div>
+<div>Judet: {{ clasa.judet }}</div>
+<div>Unitate Scolara: {{ clasa.unitateScolara }}</div>
+
+<div class="source-code-submit">
+    <h3>Adauga elev:</h3>
+    <textarea [(ngModel)]="userId" placeholder="Introdu ID-ul studentului..." rows="1" cols="50"></textarea>
+    <button (click)="adaugaElev()">Adauga elev</button>
+  </div>
+
+<div class="teme">
+<h3>Teme</h3>
+<div *ngFor="let tema of teme">
+    <p>Nume: {{ tema.nume }}</p>
+    <p>Descriere: {{ tema.descriere }}</p>
+    <p>Data inceput: {{ tema.dataInceput }}</p>
+    <p>Data sfarsit: {{ tema.dataSfarsit }}</p>
+</div>
+</div>
+  
+
+<button (click)="deleteClasa()">Sterge clasa</button>
+

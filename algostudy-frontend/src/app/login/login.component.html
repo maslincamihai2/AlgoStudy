@@ -1,0 +1,21 @@
+<div class="login-container">
+  <div class="shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+  <div class="login-form">
+    <h2>Welcome back!</h2>
+    <h3>Authentication</h3>
+    <p>Are you ready to solve another problem today?</p>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  color: #003366;  /* Darker blue color */
+  margin: 0;
+  margin-right: auto;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  background-color: #eee;
+  border-radius: 4px;
+  color: #607D8B;
+}
+
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+
+nav a.active {
+  color: #039be5;
+}

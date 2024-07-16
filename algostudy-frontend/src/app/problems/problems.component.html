@@ -1,0 +1,17 @@
+<div class="problems-container">
+    <div *ngFor="let problem of problems" class="problem-card" [class.solved]="isSolved(problem.id)">
+      <h2>{{ problem.title }}</h2>
+      <p>{{ problem.description }}</p>
+      <p><strong>Points:</strong> {{ problem.points }}</p>
+      <div *ngIf="isSolved(problem.id)" class="solved-indicator">
+        <span class="solved-text">Solved</span>
+        <i class="fas fa-check-circle solved-icon"></i>
+      </div>
+      <div *ngIf="!isSolved(problem.id)" class="unsolved-indicator">
+        <span class="unsolved-text">Unsolved</span>
+        <i class="fas fa-times-circle unsolved-icon"></i>
+      </div>
+      <a [routerLink]="['/problem-detail', problem.id]" class="view-problem">View Problem</a>
+    </div>
+  </div>
+  

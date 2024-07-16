@@ -1,0 +1,13 @@
+<div class="categories-container">
+    <div *ngFor="let category of categories" class="category-card" (click)="viewProblems(category.id)">
+      <h2>{{ category.name }}</h2>
+      <div *ngIf="userCategoryPoints[category.id]">
+        <p>Points in Category: {{ userCategoryPoints[category.id].categoryPoints }} / {{ userCategoryPoints[category.id].totalPoints }}</p>
+        <p>Problems Solved: {{ userCategoryPoints[category.id].problemsSolved }} / {{ userCategoryPoints[category.id].totalProblems }}</p>
+        <div class="progress-bar-container">
+          <div class="progress-bar" [style.width.%]="(userCategoryPoints[category.id].categoryPoints / userCategoryPoints[category.id].totalPoints) * 100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

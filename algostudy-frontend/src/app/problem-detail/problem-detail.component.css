@@ -1,0 +1,74 @@
+.problem-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #555;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .code-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cpp-note {
+    font-style: italic;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .solution-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .solution-code {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+  
